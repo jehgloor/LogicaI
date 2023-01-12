@@ -1,0 +1,61 @@
+<meta charset="utf-8">
+
+<script>
+	function pulaLinha(){
+
+		document.write("<br>");
+		document.write("<br>");
+
+	};
+
+	function mostra(frase){
+		document.write(frase);
+
+		pulaLinha();
+	}
+
+	var anoCopa = 1930
+
+	var limite = parseInt(prompt("Entre com a data limite"));
+
+	while(anoCopa<=limite){
+		mostra("Teve copa em " + anoCopa);
+		anoCopa = anoCopa + 4;
+	}
+
+	var contador = 20;
+
+	while(contador >0){
+
+		
+			mostra(contador );
+			
+		
+		contador --;
+	}
+
+	var cont = 30;
+
+	while(cont <=40){
+		if( cont == 33 ) {
+        cont = cont + 1;
+        }
+        else if(cont == 37) {    
+            cont = cont + 1;
+        }
+        else {
+        mostra(cont);
+        cont = cont + 1; 
+        }
+
+	}
+
+	mostra("Fim");
+	
+
+
+
+
+	
+	
+</script>
